@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="hu">
+<meta charset="utf-8" />
+<meta name="robots" content="index,follow" />
+<head>
+	<link href='https://fonts.googleapis.com/css?family=Mountains of Christmas' rel='stylesheet'>
+	<title id="title">Countback to Christmas 2022</title>
+	<style>
+		h2 {
+			box-sizing: border-box;
+			position: absolute;
+			text-align: center;
+			font-family: 'Mountains of Christmas';
+			font-size: 5vw;
+			top: 37vh;
+			left:0vw;
+			right: 0vw;
+			padding: 1vw;
+			background-color: #277534;
+		}
+		body {
+ 			background-image: url('https://www.publicdomainpictures.net/pictures/240000/velka/fondo-navideno.jpg');
+  			background-repeat: no-repeat;
+  			background-attachment: fixed;
+  			background-size: 100% 100%;
+		}
+		a{
+			font-size: 22pt;
+		}
+		a:link, a:visited {
+			box-sizing: border-box;
+			background-color: white;
+			color: black;
+			text-decoration: none;
+		}
+		a:hover, a:active{
+			box-sizing: border-box;
+			background-color: black;
+			color: white;
+			text-decoration: none;
+		}
+		#big {
+			position: absolute;
+			bottom: 0;
+			width: 50vw;
+			height: 30vh;
+			left: 0;
+		}
+		#first {
+			position: absolute;
+			bottom: 0;
+		}
+		#down, #middledown, #middle, #middletop, #top{
+			font-size: 22pt;
+		}
+		#second {
+			position: absolute;
+			bottom: 20%;
+		}
+		#third {
+			position: absolute;
+			bottom: 40%;
+		}
+		#fourth {
+			position: absolute;
+			bottom: 60%;
+		}
+		#fifth {
+			position: absolute;
+			bottom: 80%;
+		}
+		#button{
+			position: absolute;
+			top:0;
+			height: 38vh;
+		}
+		#english, #magyar{
+			font-size: 15pt;
+		}
+		#offGUI{
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			width: 30vw;
+			height: 7vh;
+		}
+		#GUI{
+			left: 75%;
+			font-size: 1.5vh;
+			float: right;
+		}
+		#player1 {
+			position:absolute;
+			right: 0;
+			top: 1vh;
+			font-size: 2vh;
+		}
+	</style>
+	<div onload="frissit()"></div>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	</head>
+<body>
+
+	<div id="button">
+		<button id="english">English</button>
+		<button id="magyar">Magyar</button>
+	</div>
+
+	<div id="big">
+		<div id="first">
+			<a href="days.html", id="down"></a>
+		</div>
+		<div id="second">
+			<a href="hours.html", id="middledown"></a>
+		</div>
+		<div id="third">
+			<a href="minutes.html", id="middle"></a>
+		</div>
+		<div id="fourth">
+			<a href="seconds.html", id="middletop"></a>
+		</div>
+		<div id="fifth">
+			<a href="milliseconds.html", id="top"></a>
+		</div>
+	</div>
+
+	<div id="offGUI">
+		<button id="GUI" onclick="GUI++;">GUI kikapcsolása</button>
+	</div>
+	
+	
+	<h1 id="now", align="center"></h1>
+	<p id="christmas"></p>
+	<h2 id="minus"; align="center"></h2>
+
+
+	<!-- zene -->
+	<div id="zene">
+		<audio></audio>
+	</div>
+	<div> 
+  		<!--<button onclick="document.getElementById('player').play()" id="player1">&#9658</button> -->
+		  <button onclick="zene()" id="player1"></button>
+	</div>
+
+	<!--
+	<embed src="Twelve.mp3" loop="true" autostart="true" width="2" height="0">
+	-->
+	<p align="left" style="position:absolute; bottom:0; right:0;font-size: 12pt;">A Richard_HUN product.Copyrighted 2020-2022 &#169.</p>
+
+	<script type="text/javascript" src="./index.js"></script>
+</body>
+</html>
